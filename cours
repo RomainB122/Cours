@@ -19,16 +19,16 @@ table { /* style tableau */
 	border : solid 5px brown;
     border-collapse : collapse;        /* colle les case*/
 }
-tr:nth-child(2n+1)
-td:nth-child(2n) {background : black;}
+tr:nth-child(2n+1) td:nth-child(2n),tr:nth-child(2n) td:nth-child(2n+1) {background : black; color : white}
+
 
 {color : white}
 
 td {border : solid 1px brown; border-radius :/* 0 
-10px 20px 40px*/;0%
+10px 20px 40px*/;0%;
 width : 30px;
 height : 30px;
-pading : }
+pading : 10px;}
 
 
 td:hover {/*survole le background*/background : green;}
@@ -41,7 +41,19 @@ td:active{background : red;}/*change background en clicant*/
 
 <h1> Tableau 8*8 </h1>
 <table><!-- balise racine du tableau--> 
+	<tr> 	
+    	<th> </th>
+		<th>a</th>
+        <th>b</th>
+        <th>c</th>
+        <th>d</th>
+        <th>e</th>
+        <th>f</th>
+        <th>g</th>
+        <th>h</th>
+   </tr>
 	<tr><!--table row--> 
+    <th>1</th>
     	<td>1</td><!--table data--> 
         <td>2</td>
         <td>3</td>
@@ -50,9 +62,11 @@ td:active{background : red;}/*change background en clicant*/
         <td>6</td>
         <td>7</td>
         <td>8</td>
+       
         
     </tr>
     <tr><!--table row (ligne)--> 
+    <th>2</th>
     	<td>1</td><!--table data--> 
         <td>2</td>
         <td>3</td>
@@ -64,6 +78,7 @@ td:active{background : red;}/*change background en clicant*/
         
     </tr>
     <tr><!--table row--> 
+    <th>3</th>
     	<td>1</td><!--table data--> 
         <td>2</td>
         <td>3</td>
@@ -72,9 +87,10 @@ td:active{background : red;}/*change background en clicant*/
         <td>6</td>
         <td>7</td>
         <td>8</td>
-        
+       
     </tr>
     <tr><!--table row--> 
+    <th>4</th>
     	<td>1</td><!--table data--> 
         <td>2</td>
         <td>3</td>
@@ -83,9 +99,10 @@ td:active{background : red;}/*change background en clicant*/
         <td>6</td>
         <td>7</td>
         <td>8</td>
-        
+         
     </tr>
     <tr><!--table row--> 
+    <th>5</th>
     	<td>1</td><!--table data--> 
         <td>2</td>
         <td>3</td>
@@ -94,9 +111,10 @@ td:active{background : red;}/*change background en clicant*/
         <td>6</td>
         <td>7</td>
         <td>8</td>
-        
+       
     </tr>
     <tr><!--table row (ligne)--> 
+    <th>6</th>
     	<td>1</td><!--table data--> 
         <td>2</td>
         <td>3</td>
@@ -105,9 +123,10 @@ td:active{background : red;}/*change background en clicant*/
         <td>6</td>
         <td>7</td>
         <td>8</td>
-        
+      
     </tr>
     <tr><!--table row (ligne)--> 
+    <th>7</th>
     	<td>1</td><!--table data--> 
         <td>2</td>
         <td>3</td>
@@ -116,9 +135,10 @@ td:active{background : red;}/*change background en clicant*/
         <td>6</td>
         <td>7</td>
         <td>8</td>
-        
+         
     </tr>
     <tr><!--table row (ligne)--> 
+    <th>8</th>
     	<td>1</td><!--table data--> 
         <td>2</td>
         <td>3</td>
@@ -127,8 +147,9 @@ td:active{background : red;}/*change background en clicant*/
         <td>6</td>
         <td>7</td>
         <td>8</td>
-        
+      
     </tr>
+ 
 </table>
 <p>This is a paragraph.</p>
 
